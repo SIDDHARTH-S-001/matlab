@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SimscapeMultibodyImportXML xmlns="urn:mathworks:SimscapeMultibody:import"
+                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                            version="2.0">
+   <Created by="Siddharth S" from="Onshape" on="11/13/22||00:01:27"
+            using="Simscape Multibody Exporter"/>
+   <ModelUnits length="millimeter" mass="gram"/>
+   <DataUnits length="meter" mass="kilogram"/>
+   <RootAssembly name="Assembly 2" uid="479b0db14bc1d94163302949"
+                 version="w-7dbfee0f12418ae2b299dd61">
+      <InstanceTree>
+         <Instance entityUid="JHD*:*56dd5fd7abcbac97e9852a9b" name="stick &lt;1&gt;"
+                   uid="MQL8hRp0XQMUuYx7T">
+            <Transform>
+               <Rotation>1.000000000 0.000000000 0.000000000 0.000000000 1.000000000 0.000000000 0.000000000 0.000000000 1.000000000 </Rotation>
+               <Translation>0.000000000 0.012500000 0.075000000 </Translation>
+            </Transform>
+         </Instance>
+         <Instance entityUid="JHD*:*8c20233f96af65c80c07da1c" name="Part 1 &lt;1&gt;"
+                   uid="M8uYrCjjxH76XsgNu">
+            <Transform>
+               <Rotation>1.000000000 0.000000000 0.000000000 0.000000000 1.000000000 0.000000000 0.000000000 0.000000000 1.000000000 </Rotation>
+               <Translation>0.000000000 -0.000000000 0.140000000 </Translation>
+            </Transform>
+         </Instance>
+         <Instance entityUid="JHD*:*a000fb1521dc75aa69f12f99" grounded="true" name="pivot &lt;1&gt;"
+                   uid="MJd03Fa4avM+1BfL7">
+            <Transform>
+               <Rotation>1.000000000 0.000000000 0.000000000 0.000000000 1.000000000 0.000000000 0.000000000 0.000000000 1.000000000 </Rotation>
+               <Translation>0.000000000 0.000000000 0.000000000 </Translation>
+            </Transform>
+         </Instance>
+      </InstanceTree>
+      <Constraints/>
+      <Joints>
+         <Revolute name="Revolute1">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>MJd03Fa4avM+1BfL7</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 0.000000000 0.000000000 0.000000000 1.000000000 0.000000000 -1.000000000 0.000000000 </Rotation>
+                  <Translation>0.000000000 -0.005000000 0.010000000 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>MQL8hRp0XQMUuYx7T</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 0.000000000 0.000000000 0.000000000 1.000000000 0.000000000 -1.000000000 0.000000000 </Rotation>
+                  <Translation>-0.000000000 -0.017500000 -0.065000000 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </Revolute>
+         <Revolute name="Revolute2">
+            <BaseFrame>
+               <InstancePath>
+                  <Uid>MQL8hRp0XQMUuYx7T</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 0.000000000 0.000000000 0.000000000 1.000000000 0.000000000 -1.000000000 0.000000000 </Rotation>
+                  <Translation>0.000000000 -0.017500000 0.065000000 </Translation>
+               </Transform>
+            </BaseFrame>
+            <FollowerFrame>
+               <InstancePath>
+                  <Uid>M8uYrCjjxH76XsgNu</Uid>
+               </InstancePath>
+               <Transform>
+                  <Rotation>1.000000000 0.000000000 0.000000000 0.000000000 0.000000000 1.000000000 0.000000000 -1.000000000 0.000000000 </Rotation>
+                  <Translation>0.000000000 -0.005000000 0.000000000 </Translation>
+               </Transform>
+            </FollowerFrame>
+         </Revolute>
+      </Joints>
+   </RootAssembly>
+   <Assemblies/>
+   <Parts>
+      <Part name="stick" uid="JHD*:*56dd5fd7abcbac97e9852a9b">
+         <ModelUnits length="millimeter" mass="gram"/>
+         <MassProperties>
+            <Mass>0.054892819</Mass>
+            <CenterOfMass>0.000000000 -0.005196778 0.001294144 </CenterOfMass>
+            <Inertia>0.000102173 0.000104342 0.000003368 -0.000000014 0.000000000 0.000000000 </Inertia>
+         </MassProperties>
+         <GeometryFile name="stick.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.156862745" g="0.321568627" r="0.866666667"/>
+            <Diffuse a="1.000000000" b="0.156862745" g="0.321568627" r="0.866666667"/>
+            <Specular a="1.000000000" b="0.156862745" g="0.321568627" r="0.866666667"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="Part 1" uid="JHD*:*8c20233f96af65c80c07da1c">
+         <ModelUnits length="millimeter" mass="gram"/>
+         <MassProperties>
+            <Mass>0.0336684777</Mass>
+            <CenterOfMass>-0.000000000 -0.005000000 0.000000000 </CenterOfMass>
+            <Inertia>0.000024474 0.000048387 0.000024474 0.000000000 0.000000000 0.000000000 </Inertia>
+         </MassProperties>
+         <GeometryFile name="Part 1.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.054901961" g="0.756862745" r="1.000000000"/>
+            <Diffuse a="1.000000000" b="0.054901961" g="0.756862745" r="1.000000000"/>
+            <Specular a="1.000000000" b="0.054901961" g="0.756862745" r="1.000000000"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+      <Part name="pivot" uid="JHD*:*a000fb1521dc75aa69f12f99">
+         <ModelUnits length="millimeter" mass="gram"/>
+         <MassProperties>
+            <Mass>0.00632043675</Mass>
+            <CenterOfMass>0.000000000 -0.005000000 0.007485999 </CenterOfMass>
+            <Inertia>0.000000409 0.000000662 0.000000359 0.000000000 0.000000000 0.000000000 </Inertia>
+         </MassProperties>
+         <GeometryFile name="pivot.step" type="STEP"/>
+         <VisualProperties>
+            <Ambient a="1.000000000" b="0.239215686" g="0.654901961" r="0.372549020"/>
+            <Diffuse a="1.000000000" b="0.239215686" g="0.654901961" r="0.372549020"/>
+            <Specular a="1.000000000" b="0.239215686" g="0.654901961" r="0.372549020"/>
+            <Emissive a="1" b="0" g="0" r="0"/>
+            <Shininess>0.5</Shininess>
+         </VisualProperties>
+      </Part>
+   </Parts>
+</SimscapeMultibodyImportXML>
